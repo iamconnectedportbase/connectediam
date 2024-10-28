@@ -15,12 +15,13 @@ import { setCookie } from "cookies-next";
 import { useEffect, useState } from "react";
 
 import AuthError from "@/components/general/AuthError";
-import { delay } from "@/lib/utils";
+
+import { loginUser } from "@/actions/login";
 
 const LoginForm = () => {
   const [loading, setLoading] = useState(false);
 
-  const [loginError, setLoginError] = useState(false);
+  const [loginError, setLoginError] = useState("");
 
   const {
     register,
@@ -43,17 +44,26 @@ const LoginForm = () => {
 
   const submitHandler: SubmitHandler<LoginType> = async (formData) => {
     setLoading(true);
-    await delay(2);
-    if (formData.username === "name") {
-      setLoginError(true);
-      setLoading(false);
-      return;
-    }
 
-    setCookie("connectedLog", "true", {
-      path: "/",
-    });
-    window.location.href = "/";
+    try {
+      const res = await loginUser(
+        formData.username.toLowerCase(),
+        formData.password
+      );
+
+      if (res?.error) {
+        setLoginError(res.error);
+        return;
+      }
+      setCookie("connectedLog", "true", {
+        path: "/",
+      });
+      window.location.href = "/";
+    } catch (error) {
+      setLoginError("Unable to sign in");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -67,7 +77,7 @@ const LoginForm = () => {
             Sign in
           </h2>
           <form onSubmit={handleSubmit(submitHandler)}>
-            {loginError && <AuthError message="Unable to sign in" />}
+            {loginError && <AuthError message={loginError} />}
             {loading && (
               <div className="absolute z-10 top-[85px] left-1/2 -translate-x-1/2 bg-white px-2">
                 <div className="loader"></div>

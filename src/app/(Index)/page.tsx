@@ -15,7 +15,7 @@ const HomePage = async () => {
 
   return (
     <>
-      <MaxWidth className="grid md:grid-cols-3 gap-x-6 gap-y-4">
+      <MaxWidth className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-4">
         <div className="bg-white border rounded-sm md:p-10 pb-24 p-5 pt-10  md:col-span-2 text-iam-blue-500">
           <h1 className="text-2xl font-bold mb-4">Welcome</h1>
           <p className="font-medium text-xl md:w-10/12 leading-8">
@@ -76,13 +76,17 @@ const HomePage = async () => {
               <h2 className="text-iam-blue-500 text-2xl font-bold">
                 Go to dashboard
               </h2>
+
               <Button
-                className="bg-iam-orange-500 px-10 text-wrap md:py-11 py-8 text-base leading-[1.2rem]"
+                className="bg-iam-orange-500 px-5 text-wrap  py-6 text-center text-base leading-[1.2rem] w-full flex flex-wrap items-center justify-center h-fit"
                 size="lg"
+                asChild
               >
-                <Link href="/orders">
-                  {" "}
-                  Go to IAMconnected account Dashboard
+                <Link
+                  href="/login"
+                  className="text-wrap break-words block w-fit"
+                >
+                  Go to Orders
                 </Link>
               </Button>
             </>
@@ -92,10 +96,16 @@ const HomePage = async () => {
                 Ready to get started?
               </h2>
               <Button
-                className="bg-iam-orange-500 px-10 text-wrap md:py-11 py-8 text-base leading-[1.2rem]"
+                className="bg-iam-orange-500 px-10  py-6 text-center text-base leading-[1.2rem] w-full flex flex-wrap items-center justify-center h-fit"
                 size="lg"
+                asChild
               >
-                <Link href="/login">Log in to IAMconnected account now</Link>
+                <Link
+                  href="/login"
+                  className="text-wrap break-words block h-fit"
+                >
+                  Log in to IAMconnected <br /> account now
+                </Link>
               </Button>
             </>
           )}

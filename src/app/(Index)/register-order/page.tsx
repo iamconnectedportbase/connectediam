@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cookies } from "next/headers";
 import { getCookie } from "cookies-next";
 import { redirect } from "next/navigation";
-// import Link from "next/link";
+import Link from "next/link";
 
 const RegisterOrder = () => {
   const session = getCookie("connectedLog", { cookies });
