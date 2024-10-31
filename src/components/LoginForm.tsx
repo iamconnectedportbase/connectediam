@@ -55,11 +55,12 @@ const LoginForm = () => {
         setLoginError(res.error);
         return;
       }
-      setCookie("connectedLog", "true", {
+      setCookie("connectedLog", res.data, {
         path: "/",
       });
       window.location.href = "/";
     } catch (error) {
+      console.error(error);
       setLoginError("Unable to sign in");
     } finally {
       setLoading(false);

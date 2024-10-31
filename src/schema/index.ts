@@ -10,6 +10,16 @@ export const loginSchema = z.object({
     .min(1, { message: "Please enter a password" }),
 });
 
+// HDR: LOGIN
+export const resetPasswordSchema = z.object({
+  old_password: z
+    .string({ message: "Please enter old password" })
+    .min(1, { message: "Please enter old password" }),
+  new_password: z
+    .string({ message: "Please enter new password" })
+    .min(1, { message: "Please enter new password" }),
+});
+
 // HDR: REGISTER
 // export const registerSchema = z
 //   .object({
@@ -47,3 +57,4 @@ export const loginSchema = z.object({
 //   });
 
 export type LoginType = z.infer<typeof loginSchema>;
+export type ResetPasswordType = z.infer<typeof resetPasswordSchema>;

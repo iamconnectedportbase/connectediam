@@ -20,7 +20,10 @@ export const loginUser = async (userName: string, password: string) => {
     if (!isPasswordCorrect) {
       return { error: "Invalid Credentials" };
     }
+
+    return { data: user.id };
   } catch (error) {
+    console.error(error);
     throw new Error("Something went wrong");
   }
 };

@@ -8,7 +8,7 @@ import { redirect } from "next/navigation";
 const TerminalReadingPage = () => {
   const session = getCookie("connectedLog", { cookies });
 
-  if (!session && session !== "true") {
+  if (!session) {
     redirect("/");
   }
   return (

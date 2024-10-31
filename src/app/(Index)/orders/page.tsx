@@ -8,11 +8,12 @@ import {
 import { cookies } from "next/headers";
 import { getCookie } from "cookies-next";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 const OrderPage = () => {
   const session = getCookie("connectedLog", { cookies });
 
-  if (!session && session !== "true") {
+  if (!session) {
     redirect("/");
   }
   return (
@@ -26,7 +27,12 @@ const OrderPage = () => {
           <p>AO Mellyaneft</p>
 
           <h4 className="font-bold">Ordered by</h4>
-          <p>hainan outmerirand tech co ltd</p>
+          <Link
+            href="/orders/information"
+            className="hover:underline-offset-4 text-iam-orange-500 underline"
+          >
+            hainan outmerirand tech co ltd
+          </Link>
 
           <h4 className="font-bold">Carrier</h4>
           <p>Ocean traffic services</p>

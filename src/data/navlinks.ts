@@ -19,8 +19,8 @@ export const navlinks = [
     name: "Terminal Reading",
     link: "/terminal-reading",
   },
-  // {
-  //   name: "Support",
-  //   link: "/support",
-  // },
+  {
+    name: "Settings",
+    link: "/settings",
+  },
 ];

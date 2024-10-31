@@ -4,12 +4,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cookies } from "next/headers";
 import { getCookie } from "cookies-next";
 import { redirect } from "next/navigation";
-import Link from "next/link";
 
 const RegisterOrder = () => {
   const session = getCookie("connectedLog", { cookies });
 
-  if (!session && session !== "true") {
+  if (!session) {
     redirect("/");
   }
   return (
@@ -38,7 +37,7 @@ const RegisterOrder = () => {
                 your order by the terminal port authority.
               </h4>
               <Button>
-                <a href="/images/test.pdf" download>
+                <a href="/images/order-form.pdf" download>
                   Download
                 </a>
               </Button>
@@ -51,7 +50,7 @@ const RegisterOrder = () => {
           </TabsContent>
           <TabsContent value="terminated">
             <div className="w-full h-full flex items-center justify-center min-h-[30dvh]">
-              You no terminated order
+              You have no terminated order
             </div>
           </TabsContent>
         </Tabs>

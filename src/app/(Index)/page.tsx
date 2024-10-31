@@ -71,7 +71,7 @@ const HomePage = async () => {
           </div>
         </div>
         <div className="bg-white border rounded-sm px-8 py-12 space-y-6 h-fit">
-          {session === "true" ? (
+          {session ? (
             <>
               <h2 className="text-iam-blue-500 text-2xl font-bold">
                 Go to dashboard

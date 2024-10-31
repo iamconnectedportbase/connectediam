@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 const ObjectivePage = () => {
   const session = getCookie("connectedLog", { cookies });
 
-  if (!session && session !== "true") {
+  if (!session) {
     redirect("/");
   }
   return (
@@ -25,6 +25,37 @@ const ObjectivePage = () => {
             neutral ans reliable hub for all logistics information in the ports
             of <strong>Rotterdam.</strong>
           </li>
+          <li>
+            Port Community System (PCS), a digital system connecting people,
+            companies, and supply chains. The PCS optimizes logistics through
+            three layers of smart applications allowing all users to exchange
+            information quickly and easily
+          </li>
+          <li>
+            Portbase realises an annual added value for the Dutch port sector of
+            more than € 400 million. At the end of 2022, there were 24,000
+            individual users registered and 5,100 organisations connected.
+          </li>
+          <li>
+            Portbase manages the Port Community System (PCS), a digital port
+            logistics platform for all Dutch ports. Portbase enables companies
+            and governments to seamlessly exchange data with each other in an
+            efficient and secure manner.
+          </li>
+          <li>
+            The Port Union Membership is an organization of prestigious and
+            honorable companies in the Rotterdam Commercial Sea Port that are
+            interrelated in agreement to protect their interest, Provide
+            guarantees to all members to the terminal authority, and convey all
+            taxes. Business Relationship is maintained within all companies in
+            this organization as your<strong> LOGIN </strong>and{" "}
+            <strong>PASSWORD</strong> being confidential to your company should
+            give you access to the port union database and rights to cargo
+            orders or authorize testing and analysis for your titled product
+            also members of the union do not face any terminal challenges as all
+            subjects including SGS and shipping agents are under the
+            accreditation of the terminal authority.
+          </li>
         </ol>
       </div>
     </MaxWidth>
@@ -32,3 +63,12 @@ const ObjectivePage = () => {
 };
 
 export default ObjectivePage;
+
+/**
+ * 
+
+Iii. The Port Union Membership is an organization of prestigious and honorable companies in the Rotterdam
+Commercial Sea Port that are interrelated in agreement to protect their interest, Provide guarantees to all
+members to the terminal authority, and convey all taxes. Business Relationship is maintained within all
+companies in this organization as your
+*/

@@ -55,8 +55,7 @@ const Navbar = ({ session }: { session: string | undefined }) => {
                 <span className="text-sky-900 text-xs font-light">English</span>
                 <IoMdArrowDropdown className="mr-2" />
               </div>
-              {session === "true" ? (
-                // TODO: ADD SIGNOUT
+              {session ? (
                 <Button
                   onClick={() => {
                     deleteCookie("connectedLog", {
@@ -90,7 +89,7 @@ const Navbar = ({ session }: { session: string | undefined }) => {
               >
                 Welcome
               </Link>
-              {session === "true" && (
+              {session && (
                 <>
                   {navlinks.map((item) => (
                     <Link
@@ -98,7 +97,7 @@ const Navbar = ({ session }: { session: string | undefined }) => {
                       href={item.link}
                       className={cn(
                         "relative custom-after hover:after:h-[2px] font-medium",
-                        pathname === item.link && "after:h-[2px]"
+                        pathname.startsWith(item.link) && "after:h-[2px]"
                       )}
                     >
                       {item.name}
@@ -141,7 +140,7 @@ const Navbar = ({ session }: { session: string | undefined }) => {
             >
               Welcome
             </Link>
-            {session === "true" && (
+            {session && (
               <>
                 {navlinks.map((item) => (
                   <Link
