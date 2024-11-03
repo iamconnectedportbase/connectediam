@@ -83,7 +83,7 @@ const HomePage = async () => {
                 asChild
               >
                 <Link
-                  href="/login"
+                  href="/orders"
                   className="text-wrap break-words block w-fit"
                 >
                   Go to Orders

@@ -1,9 +1,10 @@
 import MaxWidth from "@/components/general/MaxWidth";
-import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cookies } from "next/headers";
 import { getCookie } from "cookies-next";
 import { redirect } from "next/navigation";
+import DiagonsticForm from "@/components/DiagonsticForm";
+import TerminalForm from "@/components/TerminalForm";
 
 const TerminalReadingPage = () => {
   const session = getCookie("connectedLog", { cookies });
@@ -31,30 +32,10 @@ const TerminalReadingPage = () => {
           </TabsList>
 
           <TabsContent value="reading">
-            <div className="my-6 flex flex-col gap-4 items-start md:w-1/2">
-              <label htmlFor="reading">
-                Kindly submit your logistics for diagnostic:
-              </label>
-              <input
-                id="request"
-                className="w-full py-2 border border-iam-blue-500  block focus-within:outline-iam-blue-500"
-              />
-              <Button>Submit</Button>
-            </div>
+            <DiagonsticForm />
           </TabsContent>
           <TabsContent value="request">
-            <div className="my-6 flex flex-col gap-4 items-start md:w-8/12">
-              <label htmlFor="request">
-                Kindly submit your terminal request for consideration:
-              </label>
-              <textarea
-                id="request"
-                rows={4}
-                className="w-full py-2 border border-iam-blue-500  block focus-within:outline-iam-blue-500 "
-              />
-              <span>Please note that diagnosis takes 12 - 24 hours</span>
-              <Button>Submit</Button>
-            </div>
+            <TerminalForm />
           </TabsContent>
         </Tabs>
 

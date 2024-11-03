@@ -56,7 +56,7 @@ const InformationPage = () => {
           <h4 className="font-bold">Index:</h4>
           <p> BFG987654008769678-NLRTMHA00001AB</p>
 
-          <h4 className="font-bold">Configuration Ofice Ref:</h4>
+          <h4 className="font-bold">CONFIGURATION OFFICE REF:</h4>
           <p>ROTT466789876/30090512 N1.998979</p>
 
           <h4 className="font-bold">Payment type:</h4>
@@ -129,6 +129,23 @@ const InformationPage = () => {
         </div>
 
         <h2 className="text-2xl font-bold mb-4 border-b pb-2 mt-8 uppercase">
+          TERMINAL DATA
+        </h2>
+        <div className="grid grid-cols-[1fr_2fr] gap-y-2 uppercase md:w-8/12 gap-x-2">
+          <h4 className="font-bold">Id:</h4>
+          <p>ROTT466789876/30090512</p>
+
+          <h4 className="font-bold"> Type:</h4>
+          <p>Configuration service</p>
+          <h4 className="font-bold">Payment type:</h4>
+          <p> Bank Credit Line</p>
+          <h4 className="font-bold">Payment status:</h4>
+          <p>Rejected</p>
+          <h4 className="font-bold">Outstanding value:</h4>
+          <p> 38,000 EUROS</p>
+        </div>
+
+        <h2 className="text-2xl font-bold mb-4 border-b pb-2 mt-8 uppercase">
           Transferable data
         </h2>
         <div className="grid grid-cols-[1fr_2fr] gap-y-2 uppercase md:w-8/12 gap-x-2">
@@ -166,3 +183,13 @@ const InformationPage = () => {
 };
 
 export default InformationPage;
+
+/** 
+ 1. 
+2. 
+3. : 
+
+
+
+
+ */

@@ -31,7 +31,7 @@ const OrderPage = () => {
             href="/orders/information"
             className="hover:underline-offset-4 text-iam-orange-500 underline"
           >
-            hainan outmerirand tech co ltd
+            Hainan Oumeirand Technology Co., Ltd
           </Link>
 
           <h4 className="font-bold">Carrier</h4>
