@@ -90,7 +90,7 @@ const InformationPage = () => {
           <p> Bank Credit Line</p>
 
           <h4 className="font-bold">Payment status:</h4>
-          <p> Rejected</p>
+          <p> Approved</p>
         </div>
 
         <h2 className="text-2xl font-bold mb-4 border-b pb-2 mt-8 uppercase">
@@ -110,6 +110,10 @@ const InformationPage = () => {
           <p> Cash Payment</p>
           <h4 className="font-bold">Payment status:</h4>
           <p> Approved</p>
+          <h4 className="font-bold">Inspection status:</h4>
+          <p> Dip Test and Analysis Panding release date Expected date </p>
+          <h4 className="font-bold">Expected date:</h4>
+          <p> 26, December to 02 December 2024 </p>
         </div>
 
         <h2 className="text-2xl font-bold mb-4 border-b pb-2 mt-8 uppercase">
@@ -125,7 +129,7 @@ const InformationPage = () => {
           <h4 className="font-bold">Payment type:</h4>
           <p> Bank Credit Line</p>
           <h4 className="font-bold">Payment status:</h4>
-          <p> Rejected</p>
+          <p> Approved</p>
         </div>
 
         <h2 className="text-2xl font-bold mb-4 border-b pb-2 mt-8 uppercase">
@@ -140,7 +144,7 @@ const InformationPage = () => {
           <h4 className="font-bold">Payment type:</h4>
           <p> Bank Credit Line</p>
           <h4 className="font-bold">Payment status:</h4>
-          <p>Rejected</p>
+          <p>Approved</p>
           <h4 className="font-bold">Outstanding value:</h4>
           <p> 38,000 EUROS</p>
         </div>
