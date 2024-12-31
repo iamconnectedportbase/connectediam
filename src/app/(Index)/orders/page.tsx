@@ -70,7 +70,7 @@ const OrderPage = () => {
                     <p>
                       {" "}
                       Asset Freezing and Liquidation Not
-                      Guranteed/Specified-Multiple assets not guranteed for
+                      Guaranteed/Specified-Multiple assets not guaranteed for
                       configuration duration
                     </p>
                   </div>
@@ -88,7 +88,7 @@ const OrderPage = () => {
                   </div>
 
                   <p className="font-medium lowercase">
-                    Interference refrences:
+                    Interference references:
                   </p>
                   <div className="text-sm w-full break-words lowercase">
                     <p>
@@ -108,7 +108,7 @@ const OrderPage = () => {
                     <p>
                       {" "}
                       Product ownership misappropriation and allocation caution
-                      is expedited from Cargo Availibility to Disponent Owner
+                      is expedited from Cargo Availability to Disponent Owner
                       for ninety working days (90). Product has been secured in
                       Disponent owners tank for more than 90 days and All port
                       terminal registration is applied and paid in cash and
@@ -119,9 +119,9 @@ const OrderPage = () => {
                 <div className="text-sm w-full break-words lowercase">
                   <p>
                     {" "}
-                    Please note that the above caution is a fuction of your
-                    allocation certicate which must be issued to disponent owner
-                    prior to dip test.
+                    Please note that the above caution is a function of your
+                    allocation Certificate which must be issued to disponent
+                    owner prior to dip test.
                   </p>
                 </div>
               </AccordionContent>
@@ -160,7 +160,7 @@ const OrderPage = () => {
                   <div className="text-sm w-full break-words">
                     <div>
                       <StatusDot status="green" />
-                      <p>specied-AOMYN/DIP-JA1-RT92830 </p>
+                      <p>specified-AOMYN/DIP-JA1-RT92830 </p>
                     </div>
                   </div>
 
@@ -194,7 +194,7 @@ const OrderPage = () => {
                       {" "}
                       Financial discombobulation which indicates multiple
                       payment principal from cargo holder/carrier and not
-                      Disponent Owner. Injection Obligation and Regulations
+                      Despondent Owner. Injection Obligation and Regulations
                       which indicates tank security and injection completion on
                       the 10th of June 2024 making it six (6) Months of product
                       security without inspection and terminal scrutiny
@@ -207,11 +207,11 @@ const OrderPage = () => {
                   <div className="text-sm w-full break-words lowercase">
                     <p>
                       {" "}
-                      Testing and Anaysis as programmed for 02-06 December for
-                      delivery to beneciary is pending release due to the
-                      terminal cuations which should be countered with the
-                      allocation certifcate in the beneciary as well as the
-                      conrmation report sanction charges to be reviewed and
+                      Testing and Analysis as programmed for 02-06 December for
+                      delivery to beneficiary is pending release due to the
+                      terminal cautions which should be countered with the
+                      allocation certificate in the beneficiary as well as the
+                      confirmation report sanction charges to be reviewed and
                       clearance effective.
                     </p>
                   </div>
