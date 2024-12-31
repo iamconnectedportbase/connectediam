@@ -113,7 +113,7 @@ const InformationPage = () => {
           <h4 className="font-bold">Inspection status:</h4>
           <p> Dip Test and Analysis Panding release date Expected date </p>
           <h4 className="font-bold">Expected date:</h4>
-          <p> 02, December to 06 December 2024 </p>
+          <p> PENDING ALLOCATION CERTIFICATE</p>
         </div>
 
         <h2 className="text-2xl font-bold mb-4 border-b pb-2 mt-8 uppercase">
