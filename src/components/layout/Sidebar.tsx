@@ -15,30 +15,52 @@ const Sidebar = () => {
   // })();
   // </script>
   //   },[])
+  // return (
+  //   <>
+  //     <Script
+  //       id="tawk-to-init"
+  //       strategy="beforeInteractive"
+  //       dangerouslySetInnerHTML={{
+  //         __html: `
+  //             window.Tawk_API = window.Tawk_API || {};
+  //             window.Tawk_LoadStart = new Date();
+  //           `,
+  //       }}
+  //     />
+
+  //     {/* Tawk.to embed script */}
+  //     <Script
+  //       src="https://embed.tawk.to/6727a6054304e3196adc923b/1ibpe11q2"
+  //       strategy="afterInteractive"
+  //       crossOrigin="anonymous"
+  //     />
+
+  //     {/* <aside className=" hidden md:fixed -right-[100px] top-1/2 -translate-y-1/2 bg-[#004ab1] bg-opacity-95 hover:bg-blue-900 text-white  md:flex items-center gap-2 p-3 rounded-md text-sm font-medium -rotate-[90deg]">
+  //       <LuUsers size={20} />
+  //       <span>contact customer service</span>
+  //     </aside> */}
+  //   </>
+  // );
+
   return (
     <>
+      {/* Initialize Crisp chat script */}
       <Script
-        id="tawk-to-init"
-        strategy="beforeInteractive"
+        id="crisp-chat-init"
         dangerouslySetInnerHTML={{
           __html: `
-              window.Tawk_API = window.Tawk_API || {};
-              window.Tawk_LoadStart = new Date();
-            `,
+            window.$crisp = [];
+            window.CRISP_WEBSITE_ID = "c1ca94f7-5939-4301-bef8-05435ce90752";
+            (function(){
+              var d = document;
+              var s = d.createElement("script");
+              s.src = "https://client.crisp.chat/l.js";
+              s.async = true;
+              d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+          `,
         }}
       />
-
-      {/* Tawk.to embed script */}
-      <Script
-        src="https://embed.tawk.to/6727a6054304e3196adc923b/1ibpe11q2"
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-      />
-
-      {/* <aside className=" hidden md:fixed -right-[100px] top-1/2 -translate-y-1/2 bg-[#004ab1] bg-opacity-95 hover:bg-blue-900 text-white  md:flex items-center gap-2 p-3 rounded-md text-sm font-medium -rotate-[90deg]">
-        <LuUsers size={20} />
-        <span>contact customer service</span>
-      </aside> */}
     </>
   );
 };
